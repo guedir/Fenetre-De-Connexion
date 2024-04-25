@@ -83,3 +83,24 @@
     pointer-events: none;
     opacity: 0.5;
 }
+
+.main-input:focus ~ .highlight-span{
+    -webkit-animation: input-focus 0.3s ease;
+    animation: input-focus 0.3s ease;
+}
+
+@keyframes input-focus{
+    form{
+        background: #42ff1c;
+    }
+
+to{
+    width: 185px;
+}
+}
+
+.submit{
+    margin-top: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
